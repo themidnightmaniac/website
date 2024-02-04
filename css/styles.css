@@ -15,27 +15,31 @@
 	src: url(/fonts/Silkscreen-Bold.ttf);
 }
 
-
-
 body{
 	background-color: var(--bg-color);
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-hr {
+hr{
 	margin: 0px 0px 0px 0px;	
 	border: 0px solid black;
 	border-top: 2px solid black;
 }
+p{
+	margin: 15px;
+}
+div{
+	margin: 5px;
+}
+
 
 #page {
 	font-size: 11pt;
 	font-family: Silkscreen-Regular;
-	margin: 5px;
 	display: grid;
 	grid-template-columns: 1fr repeat(4, minmax(15ch, 1fr)) 1fr;
-	grid-template-rows: repeat(10, minmax(150px, auto));
+	grid-template-rows: repeat(12, minmax(150px, auto));
 	margin: 0 auto;
 }
 
@@ -62,7 +66,6 @@ hr {
 
 #cigars{
 	text-align: left;
-	margin: 5px;
 	background-color: var(--bg-color-alt);
 	border-color: var(--border-color);
 	grid-column: 2/6;
@@ -92,10 +95,10 @@ hr {
 	text-align: justify;
 	margin: 10px 20px 20px 20px;
 }
-#cigars h2{
+.title-content{
 	margin: 20px 20px 10px 20px;
 }
-#cigars hr{
+.separator-content{
 	margin: 0px 0px 0px 0px;	
 	border: 0px solid black;
 	border-top: 2px solid black;
@@ -107,51 +110,16 @@ hr {
     height: 200px;
 }
 
-#about-me {
-	margin: 5px;
-	background-color: var(--bg-color-alt);
-	border-color: var(--border-color);
-	grid-column: 1/2;
-	grid-row: 6/6;
-	border-bottom: solid;
-	border-color: black;
-	border-width: 2px;
-}
-#about-me p{
-	margin: 0px;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-bottom: 20px;
-	
-}
-#about-me h2{
-	padding-top: 20px; ;
-}
-
-#js-user{
-	margin: 5px;
-	background-color: var(--bg-color-alt);
-	grid-column: 6/7;
-	grid-row: 2/2;
-	border: 2px dashed black;
-}
-#js-user h2{
-	margin: 15px;
-}
-#js-user p{
-	margin: 15px;
-}
-
 .hall-of-fame{
 	border: solid;
 	border-color: black;
 	border-width: 2px;
 	border-style: dashed;
-	margin: 5px;
 	background-color: var(--bg-color-alt);
 	grid-column: 1/2;
 	grid-row: 2/6;
 }
+
 
 .image{
 	object-fit: cover;
@@ -198,7 +166,6 @@ hr {
 	border-color: black;
 	border-width: 2px;
 	border-style: dashed;
-	margin: 5px;
 	background-color: var(--bg-color-alt);
 	grid-column: 6/6;
 	grid-row: 3/8;
@@ -219,22 +186,16 @@ hr {
 	border-style: dashed;
 	margin: 15px;
 }
-.art-gallery p{
-	margin: 15px;
-}
 
 .review{
 	display: flex;
 	border: solid;
 	flex-direction: column;
 	justify-content: center;
-	border-color: black;
-	border-width: 2px;
-	border-style: dashed;
-	margin: 5px;
+	border: 2px dashed black;
 	background-color: var(--bg-color-alt);
-	grid-column: 1/8;
-	grid-row: 8/11;
+	grid-column: 1/7;
+	grid-row: 11/13;
 }
 .reviews-title{
 	align-self: top;
@@ -269,10 +230,39 @@ hr {
 	width: 240px;
 }
 
+#shortie01{
+	border: 2px dashed black;
+	background-color: var(--bg-color-alt);
+	grid-column: 1/1;
+	grid-row: 6/6;
+}
+
+#shortie02{
+	border: 2px dashed black;
+	background-color: var(--bg-color-alt);
+	grid-column: 6/6;
+	grid-row: 8/8;
+}
+
+#shortie03{
+	background-color: var(--bg-color-alt);
+	grid-column: 6/7;
+	grid-row: 2/2;
+	border: 2px dashed black;
+}
+
+
+#about-me{
+	background-color: var(--bg-color-alt);
+	grid-column: 1/1;
+	grid-row: 7/7;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
 .footer {
-	margin: 5px;
 	background-color: var(--bg-color-alt);
 	border-color: var(--border-color);
 	grid-column: 1/8;
-	grid-row: 11/12;
+	grid-row: 13/13;
 }
