@@ -82,15 +82,25 @@ div{
 	align-items: center;
 	justify-content: center;
 }
-.author {
-	margin: 5px 20px 5px 20px;
+.post-icon-right{
 	margin-left: auto;
+	margin-right: 0px;
+	width: 24px;
+}
+.post-icon{
+	width: 24px;
+	margin-left: 15px;
+	margin-right: 0px;
+}
+.author {
+	margin: 5px 20px 5px 15px;
 }
 .date {
 	justify-content: left;
 	margin: 5px 20px 5px 20px;
 	margin-right: auto;
 }
+
 .text-content {
 	text-align: justify;
 	margin: 10px 20px 20px 20px;
@@ -201,8 +211,9 @@ div{
 	align-self: top;
 	justify-self: center;
 }
-.spacer-review{
-	width: 100px;
+.icon-cards{
+	width: 24px;
+	margin-bottom: 15px;
 }
 .cards{
 	justify-content: center;
@@ -213,6 +224,7 @@ div{
 	width: 400px;
 	margin: 20px;
 	border: 2px solid black;
+	margin-right: auto;
 }
 .card02{
 	width: 400px;
@@ -220,9 +232,11 @@ div{
 	border: 2px solid black;
 }
 .card03{
+	justify-self: right;
 	width: 400px;
 	margin: 20px;
 	border: 2px solid black;
+	margin-left: auto;
 }
 
 .image-cards{
