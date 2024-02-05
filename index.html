@@ -10,7 +10,7 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="styles.css">
 
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 </head>
@@ -26,11 +26,11 @@
 		
 		<div class="hall-of-fame">
 			<h2>Hall of fame<h2>
-			<img class="image" src="/img/terry.webp" alt="Terry A. Davis">
-			<img class="image-nb" src="/img/dude.webp" style="object-position: left;" alt="Postal Dude">
-			<img class="image" src="/img/rms.webp" alt="Daddy GNU">
-			<img class="image" src="/img/jc.webp" alt="Jesus">
-			<img class="image-nb" src="/img/logo-alt.png" alt="Logo">
+			<img class="image-hf" src="/img/terry.webp" alt="Terry A. Davis">
+			<img class="image-hf-nb" src="/img/dude.webp" style="object-position: left;" alt="Postal Dude">
+			<img class="image-hf" src="/img/rms.webp" alt="Daddy GNU">
+			<img class="image-hf" src="/img/jc.webp" alt="Jesus">
+			<img class="image-hf-nb-bot" src="/img/logo-alt.png" alt="Logo">
 		</div>
 		
 		<div id="about-me">
@@ -42,7 +42,7 @@
 
 		<div id="shortie03">
 			<h2>javascript is fake and gay,</h2>
-			<p>and you should stop using it.</p>
+			<p>you should def <s>not</s> use it.</p>
 			<img src="img/js-user.webp" alt="javascript user">
 		</div>
 
@@ -53,7 +53,7 @@
 
 		<div class="art-gallery">
 			<h2>Art Gallery</h2>
-			<p>some cool images I made with blender a while ago</p>
+			<p>cool images I made w/ blender</p>
 			<img class="image-gallery" src="img/blend/blend01.webp" width="300px" alt="Dream Pool">
 			<img class="image-gallery" src="img/blend/blend02.webp" width="300px" alt="Dream Pool">
 			<img class="image-gallery" src="img/blend/blend03.webp" width="300px" alt="Dream Pool">
@@ -79,8 +79,8 @@
 					Yesterday I had my first cuban cigar. It was pretty mid tbh. My friend had 3 of those fancy uncut cigars laying around,so we tought it would be a nice idea to smoke one. We hadnt smoked anything before, and I mean not even cigarretes or those cheap vape thingys, and do not plan to smoke anyhing in the future (maybe just another cigar).<br>
 					It is kinda funny because he had those fancy cigars but no cutter, so we had to use the single cutting object in the house, a gardening fucking scissor, well there was those cheap butter knives laying around too, but we decided it would be better to use the scissors.<br>
 					So we cut off the tip of the cigar and got out of his house, with a cheap bic lighter, a mixture of vodka lemon juice and this strange looking fruit and also a pack of cookies (the fruit was <a href="https://en.wikipedia.org/wiki/Pitaya">pitaya</a> iirc).<br>
-					Then we arived at a safe spot to smoke (or so we thought) and lit up the cigar. Not gonna lie it was pretty hard and I burned my fingers in the process, but once we got it lit we started puffing.<br>
-					We coughed a lot, and I mean a <i>lot</i>, we coughed every time we inhaled smoke, might be because of our healthy lungs (smokers are seething), or something, and it tasted like soil or cement or something, not even kidding, afterwards I could swear I licked a wall. But we felt badass ngl. We tought we looked like <a href="https://onepiece.fandom.com/wiki/Smoker">smoker from one piece</a>.<br>
+					Then we arived at <b style="font-size: large;">the spot</b> and lit up the cigar. Not gonna lie it was pretty hard and I burned my fingers in the process, but once we got it lit we started puffing.<br>
+					By the way we didnt expect the taste to be like soil or cement or something, not even kidding, afterwards I could swear I licked a wall. But we felt badass ngl. We tought we looked like <a href="https://onepiece.fandom.com/wiki/Smoker">smoker from one piece</a>.<br>
 					Oh and also while we were smoking there, in our "safe spot" some random ass old people kept looking at us from inside their car. So from five to five minutes some random old head would pass by in a car looking at us, and even fast, they were like 20km/h (muricans are seething) in a busy street, at night. If you are old and are reading this pleas, stop looking at people smoking at night, It makes the uncofortable<br>
 					But anyways we finished the cigar, drinked all of the elixir and headed home, after using half a can of deodorant to hide the smell, we then took a shower and I headed home, which in itself was also a funny experience, because public transport, lol.<br>
 					After all it wasnt that mid, we just didnt expect the wood/soil taste of the cigar, and we also had a funny talk in the way back home of how it is impossible to get addicted to something as exotic (for the lack of an appropriate word) as a cigar.<br>
@@ -126,10 +126,34 @@
 					<p>...</p>
 					<p><i>no info</i></p>
 				</div>
+			
+			</div>
+		</div>
+		<div class="sotw">
+			<h2>Song Of The Week:</h2>
+			<img src="music/sotw.jpg" class="sotw-image">
+			<div class="audio-player">
+				<audio id="audio">
+					<source src="music/sotw.m4a">
+					Your browser does not support the audio element.
+				</audio>
+				<div class="controls">
+					<button class="music-play-button" id="play-pause-button">Play</button>
+					<div class="slider-container">
+						<input type="range" min="0" max="1" step="0.01" value="1" class="slider" id="volume-control">
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar" id="progress-bar"></div>
+				</div>
+				<div id="current-time">0:00</div>
+				<p style="display: inline;">-</p>
+				<div id="total-time">0:00</div>
+			<h2>-Unglued-<br>By Stone Temple Pilots</h2>
 			</div>
 		</div>
 	</div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
