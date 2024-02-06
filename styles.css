@@ -131,6 +131,57 @@ div{
 
 /*Post 02*/
 
+#maintainer{
+	text-align: left;
+	background-color: var(--bg-color-alt);
+	border-color: var(--border-color);
+	grid-column: 2/6;
+	grid-row: 5/5;
+	border: solid;
+	border-color: black;
+	border-width: 2px 0px 2px 0px;
+	background-color: var(--bg-color-alt);
+}
+
+.post-head{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.post-icon-right{
+	margin-left: auto;
+	margin-right: 0px;
+	width: 24px;
+}
+.post-icon{
+	width: 24px;
+	margin-left: 15px;
+	margin-right: 0px;
+}
+
+.author {
+	margin: 5px 20px 5px 15px;
+}
+.date {
+	justify-content: left;
+	margin: 5px 20px 5px 20px;
+	margin-right: auto;
+}
+
+.text-content {
+	text-align: justify;
+	margin: 10px 20px 20px 20px;
+}
+.title-content{
+	margin: 20px 20px 10px 20px;
+}
+.separator-content{
+	margin: 0px 0px 0px 0px;	
+	border: 0px solid black;
+	border-top: 2px solid black;
+}
+
 /*Hall Of Fame*/
 
 .hall-of-fame{
@@ -231,7 +282,7 @@ div{
 	border: 2px dashed black;
 	background-color: var(--bg-color-alt);
 	grid-column: 1/7;
-	grid-row: 11/13;
+	grid-row: 12/14;
 }
 .reviews-title{
 	align-self: top;
@@ -323,6 +374,66 @@ div{
     animation-iteration-count: infinite;
 	width: 140px;
 }
+
+#shortie05{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-color-alt);
+	border-color: var(--border-color);
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	grid-column: 1/1;
+	grid-row: 9/12;
+}
+
+#shortie05 img{
+	border: 2px dashed black;
+	margin: 5px 15px 5px 15px;
+}
+
+#shortie06{
+	border: 2px dashed black;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-color-alt);
+	grid-column: 6/7;
+	grid-row: 9/9;
+}
+
+#shortie06 img{
+	align-self: center;
+	width: 300px;
+	margin: 20px;
+}
+
+#shortie06 p{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+#mfw {
+	border-color: var(--border-color);
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--bg-color-alt);
+	grid-column: 4/6;
+	grid-row: 4/4;
+}
+
+#mfw img{
+	width: 300px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#mfw h2{
+	margin: 20px;
+}
+
+/*about Me*/
 
 #about-me{
 	background-color: var(--bg-color-alt);
@@ -450,5 +561,5 @@ div{
 	background-color: var(--bg-color-alt);
 	border-color: var(--border-color);
 	grid-column: 1/8;
-	grid-row: 13/13;
+	grid-row: 15/15;
 }
