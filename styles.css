@@ -434,6 +434,24 @@ div{
 	border-bottom: 2px solid black;
 }
 
+/*Quite Empy*/
+
+#empty{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--bg-color-alt);
+	grid-column: 6/6;
+	grid-row: 10/12;
+}
+
+#empty img{
+	align-self: center;
+}
+
+#empty p{
+}
+
 /*SOTW (Song Of The Week)*/
 
 .sotw{

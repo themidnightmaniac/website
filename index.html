@@ -82,6 +82,22 @@
 			<h2>when arch linux</h2>
 		</div>
 
+		<div id="empty">
+			<h2 id="helo"></h2>
+			<img alt="thumbs up" src="img/thumbsup.png">
+			<script>
+				var time = new Date()
+				if (time < 10) {
+					greeting = "Hope yuo are having a good morning";
+				} else if (time < 18) {
+				  greeting = "Hope yuo are having a good day";
+				} else {
+				  greeting = "Hope yuo are having a good evening";
+				}
+				document.getElementById("helo").innerHTML = greeting
+			</script>
+		</div>
+
 		<div class="art-gallery">
 			<h2>Art Gallery</h2>
 			<p>cool images I made w/ blender</p>
@@ -106,7 +122,7 @@
 			</div>
 			<hr class="separator-content">
 			<img id="tate-img" src="img/post/tate.webp" alt="Top G having a smoke">
-			<h2 class="title-content">Cigars are weird.</h2>
+			<h2 class="title-content">Cigars are weird</h2>
 			<p class="text-content">
 					Yesterday I tried my first cuban cigar. My friend had 3 of those fancy uncut cigars laying around,so we tought it would be a good idea to smoke one. We hadnt smoked anything before, and I mean not even cigarretes or those cheap vape thingys, and do not plan to smoke anyhing in the future, maybe just another cigar.<br>
 					It is kinda funny because he had those fancy cigars but no cutter, so we had to use the single cutting object in the house, a gardening fucking scissor, well there was those cheap butter knives laying around too, but we decided it would be better to use the scissors.<br>
