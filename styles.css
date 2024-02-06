@@ -99,6 +99,7 @@ div{
 	margin-left: 15px;
 	margin-right: 0px;
 }
+
 .author {
 	margin: 5px 20px 5px 15px;
 }
@@ -282,6 +283,34 @@ div{
 	border: 2px dashed black;
 }
 
+#shortie04{
+	border: 2px dashed black;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg-color-alt);
+	grid-column: 1/1;
+	grid-row: 8/8;
+}
+
+@keyframes blink {
+    0% {
+        content: url(img/as-pos.png);
+    }
+    50% {
+		content: url(img/as-neg.png);
+    }
+    100% {
+		content: url(img/as-pos.png);
+    }
+}
+
+#shortie04 img{
+	animation: blink 5s;
+    animation-iteration-count: infinite;
+	width: 140px;
+}
 
 #about-me{
 	background-color: var(--bg-color-alt);
