@@ -2,6 +2,9 @@
 	--bg-color-alt: hsl(23, 46%, 89%);
 	--bg-color: hsl(60, 100%, 97%);
 	--border-color: hsl(0, 0%, 0%);
+	--text-color: hsl(0, 0%, 0%);
+	--link-color: hsl(241, 100%, 65%);
+	--link-color-visited: hsl(241, 100%, 28%);
 }
 
 @font-face {
@@ -16,6 +19,7 @@
 }
 
 body{
+	color: var(--text-color);
 	background-color: var(--bg-color);
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
@@ -23,14 +27,22 @@ body{
 
 hr{
 	margin: 0px 0px 0px 0px;	
-	border: 0px solid black;
-	border-top: 2px solid black;
+	border: 0px solid var(--border-color);
+	border-top: 2px solid;
 }
 p{
 	margin: 15px;
 }
 div{
 	margin: 5px;
+}
+
+a {
+ color: var(--link-color);
+}
+
+a:visited {
+	color: var(--link-color-visited);
 }
 
 /*Page*/
@@ -57,7 +69,7 @@ div{
 	margin-bottom: 5px;
 	grid-column: 1/8;
 	border: solid;
-	border-color: black;
+	border-color: var(--border-color);
 	border-width: 2px 0px 2px 0px;
 }
 
@@ -78,7 +90,6 @@ div{
 	grid-column: 2/6;
 	grid-row: 2/4;
 	border: solid;
-	border-color: black;
 	border-width: 2px 0px 2px 0px;
 }
 
@@ -116,8 +127,8 @@ div{
 }
 .separator-content{
 	margin: 0px 0px 0px 0px;	
-	border: 0px solid black;
-	border-top: 2px solid black;
+	border: 0px solid var(--border-color);
+	border-top: 2px solid;
 }
 #tate-img{
 	float: left;
@@ -174,17 +185,14 @@ div{
 }
 .separator-content{
 	margin: 0px 0px 0px 0px;	
-	border: 0px solid black;
-	border-top: 2px solid black;
+	border: 0px solid var(--border-color);
+	border-top: 2px solid var(--border-color);
 }
 
 /*Hall Of Fame*/
 
 .hall-of-fame{
-	border: solid;
-	border-color: black;
-	border-width: 2px;
-	border-style: dashed;
+	border: 2px solid var(--border-color);
 	background-color: var(--bg-color-alt);
 	grid-column: 1/2;
 	grid-row: 2/6;
@@ -196,10 +204,7 @@ div{
 	object-fit: cover;
 	width: 300px;
 	height: 300px;
-	border: solid;
-	border-color: black;
-	border-width: 2px;
-	border-style: dashed;
+	border: 2px dashed var(--border-color);
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 15px;
@@ -209,10 +214,7 @@ div{
 	object-fit: cover;
 	width: 300px;
 	height: 300px;
-	border: solid;
-	border-color: black;
-	border-width: 2px;
-	border-style: dashed;
+	border: 2px dashed var(--border-color);
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 15px;
@@ -237,30 +239,21 @@ div{
 /*Art Gallery*/
 
 .art-gallery{
-	border: solid;
-	border-color: black;
-	border-width: 2px;
-	border-style: dashed;
+	border: 2px dashed var(--border-color);
 	background-color: var(--bg-color-alt);
 	grid-column: 6/6;
 	grid-row: 3/8;
 }
 .image-gallery{
 	min-width: 100px;
-	border: solid;
-	border-color: black;
-	border-width: 2px;
-	border-style: dashed;
+	border: 2px dashed var(--border-color);
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 15px;
 }
 .image-bot-gallery{
 	min-width: 100px;
-	border: solid;
-	border-color: black;
-	border-width: 2px;
-	border-style: dashed;
+	border: 2px dashed var(--border-color);
 	margin: 15px;
 }
 .art-gallery p{
@@ -274,7 +267,7 @@ div{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: 2px dashed black;
+	border: 2px dashed var(--border-color);
 	background-color: var(--bg-color-alt);
 	grid-column: 1/7;
 	grid-row: 12/14;
@@ -292,19 +285,19 @@ div{
 .card01{
 	width: 400px;
 	margin: 20px;
-	border: 2px solid black;
+	border: 2px solid var(--border-color);
 	margin-right: auto;
 	margin-left: auto;
 }
 .card02{
 	width: 400px;
 	margin: 20px;
-	border: 2px solid black;
+	border: 2px solid var(--border-color);
 }
 .card03{
 	width: 400px;
 	margin: 20px;
-	border: 2px solid black;
+	border: 2px solid var(--border-color);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -317,28 +310,30 @@ div{
 /*Shorties*/
 
 #shortie01{
-	border: 2px dashed black;
+	border: 2px dashed var(--border-color);
 	background-color: var(--bg-color-alt);
 	grid-column: 1/1;
 	grid-row: 6/6;
 }
 
 #shortie02{
-	border: 2px dashed black;
+	border: 2px dashed var(--border-color);
 	background-color: var(--bg-color-alt);
 	grid-column: 6/6;
 	grid-row: 8/8;
 }
 
+
 #shortie03{
 	background-color: var(--bg-color-alt);
 	grid-column: 6/7;
 	grid-row: 2/2;
-	border: 2px dashed black;
+	border: 2px dashed var(--border-color);
 }
 
+
 #shortie04{
-	border: 2px dashed black;
+	border: 2px dashed var(--border-color);
 	overflow: hidden;
 	display: flex;
 	align-items: center;
@@ -378,12 +373,12 @@ div{
 }
 
 #shortie05 img{
-	border: 2px dashed black;
+	border: 2px dashed var(--border-color);
 	margin: 5px 15px 5px 15px;
 }
 
 #shortie06{
-	border: 2px dashed black;
+	border: 2px dashed var(--border-color);
 	display: flex;
 	flex-direction: column;
 	background-color: var(--bg-color-alt);
@@ -430,8 +425,8 @@ div{
 	background-color: var(--bg-color-alt);
 	grid-column: 1/1;
 	grid-row: 7/7;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+	border-top: 2px solid var(--border-color);
+	border-bottom: 2px solid var(--border-color);
 }
 
 /*Quite Empy*/
@@ -450,9 +445,6 @@ div{
 	align-self: center;
 }
 
-#empty p{
-}
-
 /*SOTW (Song Of The Week)*/
 
 .sotw{
@@ -468,7 +460,7 @@ div{
 }
 
 .sotw-image{
-	border: 2px solid black;
+	border: 2px solid var(--border-color);
 	max-width: 200px;
 }
 
@@ -487,17 +479,17 @@ div{
 }
 
 .music-play-button{
-	border: 2px solid black;
+	border: 2px solid var(--border-color);
 	width: 100px;
 	height: 30px;
 	font-family: Silkscreen-Regular;
-	color: black;
+	color: var(--text-color);
 	background-color: var(--bg-color-alt);
 }
 
 .music-play-button:hover{
-	background-color: black;
-	color: white;
+	background-color: var(--border-color);
+	color: var(--bg-color);
 }
 
 .progress {
@@ -505,14 +497,14 @@ div{
     margin-top: 10px;
 	margin-left: 0;
 	padding: 2px;
-	border: 2px dashed black;
+	border: 2px dashed var(--border-color);
 }
 
 .progress-bar {
 	margin: 0;
     width: 0;
 	height: 100%;
-    background-color: black;
+    background-color: var(--bg-color-alt);
 }
 
 .slidecontainer {
@@ -523,7 +515,7 @@ div{
 	appearance: none;
 	width: 100%;
 	height: 2px;
-	background-color: black;
+	background-color: var(--border-color);
 	outline: none;
 }
 .slider::-webkit-slider-thumb {
@@ -532,14 +524,14 @@ div{
 	width: 17px;
 	height: 17px;
 	border: 0;
-	background: url('/img/icon/slider-handle-pos.png');
+	background: url('/img/icon/slider-handle-neg.png');
 	cursor: pointer;
 }  
 .slider::-moz-range-thumb {
 	width: 17px;
 	height: 17px;
 	border: 0;
-	background: url('/img/icon/slider-handle-pos.png');
+	background: url('/img/icon/slider-handle-neg.png');
 	cursor: pointer;
 }
 .slider::-webkit-slider-thumb:active {
@@ -548,7 +540,7 @@ div{
 	width: 17px;
 	height: 17px;
 	border: 0;
-	background: url('/img/icon/slider-handle-neg.png');
+	background: url('/img/icon/slider-handle-pos.png');
 	cursor: pointer;
   }
   
@@ -556,7 +548,7 @@ div{
 	width: 17px;
 	height: 17px;
 	border: 0;
-	background: url('/img/icon/slider-handle-neg.png');
+	background: url('/img/icon/slider-handle-pos.png');
 	cursor: pointer;
 }
 
