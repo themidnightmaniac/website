@@ -6,13 +6,13 @@
 
 @font-face {
 	font-family: Silkscreen-Regular;
-	src: url(/fonts/Silkscreen-Regular.ttf);
+	src: url('/fonts/Silkscreen-Regular.ttf') format('truetype');
   }
 
 @font-face {
 	font-family: Silkscreen-Bold;
 	font-weight: bold;
-	src: url(/fonts/Silkscreen-Bold.ttf);
+	src: url('/fonts/Silkscreen-Bold.ttf') format('truetype');
 }
 
 body{
@@ -80,7 +80,6 @@ div{
 	border: solid;
 	border-color: black;
 	border-width: 2px 0px 2px 0px;
-	background-color: var(--bg-color-alt);
 }
 
 .post-head{
@@ -104,7 +103,6 @@ div{
 	margin: 5px 20px 5px 15px;
 }
 .date {
-	justify-content: left;
 	margin: 5px 20px 5px 20px;
 	margin-right: auto;
 }
@@ -124,9 +122,9 @@ div{
 #tate-img{
 	float: left;
     margin: 5px 20px 0px 20px;
+	width: 200px;
 	border-bottom: 2px solid var(--border-color);
-    width: 200px;
-    height: 200px;
+
 }
 
 /*Post 02*/
@@ -134,13 +132,11 @@ div{
 #maintainer{
 	text-align: left;
 	background-color: var(--bg-color-alt);
-	border-color: var(--border-color);
 	grid-column: 2/6;
 	grid-row: 5/5;
 	border: solid;
-	border-color: black;
 	border-width: 2px 0px 2px 0px;
-	background-color: var(--bg-color-alt);
+	border-color: var(--border-color);
 }
 
 .post-head{
@@ -276,7 +272,6 @@ div{
 
 .review{
 	display: flex;
-	border: solid;
 	flex-direction: column;
 	justify-content: center;
 	border: 2px dashed black;
@@ -284,10 +279,7 @@ div{
 	grid-column: 1/7;
 	grid-row: 12/14;
 }
-.reviews-title{
-	align-self: top;
-	justify-self: center;
-}
+
 .icon-cards{
 	width: 24px;
 	margin-bottom: 15px;
@@ -310,7 +302,6 @@ div{
 	border: 2px solid black;
 }
 .card03{
-	justify-self: right;
 	width: 400px;
 	margin: 20px;
 	border: 2px solid black;
@@ -552,7 +543,6 @@ div{
 
 #current-time, #total-time {
 	display: inline;
-    margin-top: 10px;
 }
 
 /*Footer*/
