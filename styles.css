@@ -443,6 +443,7 @@ div{
 	background-color: var(--bg-color-alt);
 	grid-column: 6/6;
 	grid-row: 10/12;
+	border: 2px dashed var(--border-color);
 }
 
 #empty img{
