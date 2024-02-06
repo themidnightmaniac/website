@@ -1,6 +1,6 @@
 /*Custom Audio Player*/
 
-const audio = document.getElementById("audio");
+const audio = document.getElementById("audio-music");
 const playPauseButton = document.getElementById("play-pause-button");
 const volumeControl = document.getElementById("volume-control");
 const progressBar = document.getElementById("progress-bar");
