@@ -10,9 +10,10 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet"			 type="text/css" href="themes/main.css" title="main">
 
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/> 
+
 </head>
 
 <body>
@@ -20,140 +21,200 @@
 	<div id="page">
 		
 		<div id="header">
+			
 			<img id="logo" src="/img/logo-alt.png" width="150px" alt="logo">
+		
 			<h1><u>Midnight Maniac</u></h1>
+		
+			<div id="theme-switcher">
+		
+				<p>Change Theme</p>
+		
+				<button id="theme-button" onclick="toggleTheme()">Dark</button> 
+	
+			</div>		
+	
 		</div>
 		
-		<div class="hall-of-fame">
-			<h2>Hall of fame<h2>
-			<img class="image-hf" src="/img/terry.webp" alt="Terry A. Davis">
-			<img class="image-hf-nb" src="/img/dude.webp" style="object-position: left;" alt="Postal Dude">
+		<div id="hall-of-fame">
+			<h2>Hall of fame</h2>
+
+			<p>something meaninful</p>
+
+			<img class="image-hf" src="/img/jc.webp" alt="Jesus Christ">
+			<img class="image-hf" src="/img/terry.webp" alt="Terry Davis">
 			<img class="image-hf" src="/img/rms.webp" alt="Daddy GNU">
-			<img class="image-hf" src="/img/jc.webp" alt="Jesus">
-			<img class="image-hf-nb-bot" src="/img/logo-alt.png" alt="Logo">
-		</div>
+			<img src="/img/dude.webp" alt="Postal Dude">
+			<img class="image-hf-bot" src="/img/logo-alt.png" alt="Me">
 		
-		<div id="about-me">
-			<h2>About Me, Bitch!</h2>
-			<p>
-				"About Me" sections are way harder to write than it seems, and you only realize that when you actually start writing them.
-			</p>
 		</div>
 
-		<div id="shortie01">
-			<img src="img/average-programmer.webp" alt="average js programmer" width="300px">
-			<p>HAHAHAHA I LOVE CODING HAHAHHAHAHAHA I LOVE CODING HAHAHA *shell loading sound* HAHAHHAHAHHA *BOOOM!*</p>
-		</div>
-
-		<div id="shortie02">
-			<p>le missing flight</p>
-			<img src="img/malaysia.webp" alt="malaysia flight 370 > /dev/null" width="300px">
-		</div>
-
-		<div id="shortie03">
-			<h2>javascript is fake and gay,</h2>
-			<p>you should def <s>not</s> use it.</p>
-			<img src="img/js-user.webp" alt="javascript user">
-		</div>
-
-		<div id="shortie04">
-			<img src="img/as-pos.png" alt="adult swim" width="200">
-			<img src="img/as-pos.png" alt="adult swim" width="200">
-			<img src="img/as-pos.png" alt="adult swim" width="200">
-			<img src="img/as-pos.png" alt="adult swim" width="200">
-			<img src="img/as-pos.png" alt="adult swim" width="200">
-		</div>
-
-
-		<div id="shortie05">
-			<h2>this website is approved</h2>
-			<img src="img/hatman-bg.png">
-			<h2>by the hat man</h2>
-		</div>
-
-		<div id="shortie06">
-			<p>totally not cool</p>
-			<img src="img/totallynotcool.png" alt="not cool, dude!">
-		</div>
-
-		<div id="mfw">
-			<h2>mfw</h2>
-			<img src="/img/post/fedora.png">
-			<h2>when arch linux</h2>
-		</div>
-
-		<div id="empty">
-			<h2 id="helo"></h2>
-			<img alt="thumbs up" src="img/thumbsup.png">
-			<script>
-				var time = new Date()
-				if (time < 10) {
-					greeting = "Hope yuo are having a good morning";
-				} else if (time < 18) {
-				  greeting = "Hope yuo are having a good day";
-				} else {
-				  greeting = "Hope yuo are having a good evening";
-				}
-				document.getElementById("helo").innerHTML = greeting
-			</script>
-		</div>
-
-		<div class="art-gallery">
+		<div id="art-gallery">
 			<h2>Art Gallery</h2>
+		
 			<p>cool images I made w/ blender</p>
+		
 			<img class="image-gallery" src="img/blend/blend01.webp" width="300px" alt="Dream Pool">
 			<img class="image-gallery" src="img/blend/blend02.webp" width="300px" alt="Dream Pool">
 			<img class="image-gallery" src="img/blend/blend03.webp" width="300px" alt="Dream Pool">
 			<img class="image-gallery" src="img/blend/blend04.webp" width="300px" alt="Dream Pool">
-			<img class="image-bot-gallery" src="img/blend/blend05.webp" width="300px" alt="Dream Pool">
+			<img class="image-gallery-bot" src="img/blend/blend05.webp" width="300px" alt="Dream Pool">
+	
 		</div>
-				
-		<div class="footer">
-			<h2>its a footer lol</h2>
+		
+		<div id="about-me">
+			
+			<h2>About Me, Bitch!</h2>
+		
+			<p>
+				"About Me" sections are way harder to write than it seems, and you only realize that when you actually start writing them.
+			</p>
+	
 		</div>
 
+		<div id="shortie01">
+		
+			<img src="img/average-programmer.webp" alt="average js programmer" width="300px">
+	
+			<p>HAHAHAHA I LOVE CODING HAHAHHAHAHAHA I LOVE CODING HAHAHA *shell loading sound* HAHAHHAHAHHA *BOOOM!*</p>
+	
+		</div>
+
+		<div id="shortie02">
+		
+			<p>le missing flight</p>
+		
+			<img src="img/malaysia.webp" alt="malaysia flight 370 > /dev/null" width="300px">
+	
+		</div>
+
+		<div id="shortie03">
+		
+			<h2>javascript is fake and gay,</h2>
+		
+			<p>you should def <s>not</s> use it.</p>
+		
+			<img src="img/js-user.webp" alt="javascript user">
+	
+		</div>
+
+		<div id="shortie04">
+		
+			<img src="img/as-pos.png" alt="adult swim" width="200">
+			<img src="img/as-pos.png" alt="adult swim" width="200">
+			<img src="img/as-pos.png" alt="adult swim" width="200">
+			<img src="img/as-pos.png" alt="adult swim" width="200">
+			<img src="img/as-pos.png" alt="adult swim" width="200">
+	
+		</div>
+
+
+		<div id="shortie05">
+		
+			<h2>this website is approved</h2>
+		
+			<img src="img/hatman-bg.png">
+		
+			<h2>by the hat man</h2>
+		
+		</div>
+
+		<div id="shortie06">
+		
+			<p>totally not cool</p>
+		
+			<img src="img/totallynotcool.png" alt="not cool, dude!">
+		
+		</div>
+
+		<div id="mfw">
+			
+			<h2>mfw</h2>
+			
+			<img src="/img/post/fedora.png">
+			
+			<h2>mf when arch linux</h2>
+		
+		</div>
+
+		<div id="heyo">
+			<h2 id="helo"></h2>
+		
+			<img alt="thumbs up" src="img/thumbsup.png">
+	
+			<script>
+				var d = new Date();
+				var hour = d.getHours();
+				if (hour < 10) {
+					greeting = "Hope yuo r having a good morning";
+				} else if (hour < 18) {
+				  greeting = "Hope yuo r having a good day";
+				} else {
+				  greeting = "Hope yuo r having a good evening";
+				}
+				document.getElementById("helo").innerHTML = greeting
+			</script>
+		
+		</div>
+		
 		<div id="cigars">
+			
 			<div class="post-head">
 				<p class="date"><i>02/03/24</i></p>
+			
 				<img src="img/icon/icon-star.png" class="post-icon-right" alt="star">
 				<img src="img/icon/icon-picture.png" class="post-icon" alt="picture">
 				<img src="img/icon/icon-text.png" class="post-icon" alt="text" style="width: 14px;">
+			
 				<p class="author"><i>by me</i></p>
+			
 			</div>
+		
 			<hr class="separator-content">
+		
 			<img id="tate-img" src="img/post/tate.webp" alt="Top G having a smoke">
+		
 			<h2 class="title-content">Cigars are weird</h2>
+		
 			<p class="text-content">
 					Yesterday I tried my first cuban cigar. My friend had 3 of those fancy uncut cigars laying around,so we tought it would be a good idea to smoke one. We hadnt smoked anything before, and I mean not even cigarretes or those cheap vape thingys, and do not plan to smoke anyhing in the future, maybe just another cigar.<br>
 					It is kinda funny because he had those fancy cigars but no cutter, so we had to use the single cutting object in the house, a gardening fucking scissor, well there was those cheap butter knives laying around too, but we decided it would be better to use the scissors.<br>
-					So we cut off the tip of the cigar and got out of his house, with a cheap bic lighter, a mixture of vodka lemon juice and this strange looking fruit and also a pack of cookies (iirc the fruit was <a href="https://en.wikipedia.org/wiki/Pitaya" target="blank">pitaya</a>).<br>
+					So we cut off the tip of the cigar and got out of his house, with a cheap bic lighter, a mixture of vodka lemon juice and this <a href="https://en.wikipedia.org/wiki/Pitaya" target="blank">strange looking fruit</a> and also a pack of cookies.<br>
 					Then we arived at <b style="font-size: medium;">*the spot*</b> and lit up the cigar. Not gonna lie it was pretty hard and I burned my fingers in the process, but once we got it lit we started puffing.<br>
-					By the way we didnt expect the taste to be like soil or cement or something, not even kidding, afterwards I could swear I licked a wall. But we felt badass ngl. We tought we looked like <a href="https://onepiece.fandom.com/wiki/Smoker" target="blank">smoker from one piece</a>.<br>
+					By the way we didnt expect the taste to be like soil or cement or something, not even kidding, afterwards I could swear I licked a wall. But we felt badass ngl. We tought we looked like smoker from one piece.<br>
 					Oh and also while we were smoking there, in our "safe spot" some random ass old people kept looking at us from inside their car. So from five to five minutes some random old head would pass by in a car looking at us, and even fast, they were like 20km/h (muricans are seething) in a busy street, at night. If you are old and are reading this pleas, stop looking at people smoking at night, It makes the uncofortable<br>
 					But anyways we finished the cigar, drinked all of the elixir and headed home, after using half a can of deodorant to hide the smell, we then took a shower and I headed home, which in itself was also a funny experience, because public transport, lol.<br>
 					After all it wasnt that mid, we just didnt expect the wood/soil taste of the cigar, and we also had a funny talk in the way back home of how it is impossible to get addicted to something as exotic (for the lack of an appropriate word) as a cigar.<br>
-					If you want to try it someday too, make sure to bring deodorant and something for the throat, if you dont want to sound and smell like a crazy military dude or a cuban. OH AND ALSO Dont inhale the smoke, im a dumbass, and tysm louceph for telling me that, you're a massive fucking legend.
-				</p>
+					If you want to try it someday too, make sure to bring deodorant and something for the throat, if you dont want to sound and smell like a crazy military dude or a cuban. OH AND ALSO Dont inhale the smoke, im a dumbass, and tysm louceph for pointing that out to me, you're a massive fucking legend.
+			</p>
 		</div>
 
 		<div id="maintainer">
+		
 			<div class="post-head">
 				<p class="date"><i>02/06/24</i></p>
 				<img src="img/icon/icon-star.png" class="post-icon-right" alt="star">
 				<img src="img/icon/icon-text.png" class="post-icon" alt="text" style="width: 14px;">
 				<p class="author"><i>by me</i></p>
 			</div>
+		
 			<hr class="separator-content">
+		
 			<h2 class="title-content">What?</h2>
+		
 			<p class="text-content">
 				What the fuck did you just fucking say about me, you little bigot? I'll have you know I graduated top of my class in Udemy, and I've been involved in moderating numerous subreddits, and I also maintain over 300 packages on the AUR. I am trained in Moderation and Administration and I have the the top reputation on Stack Overflow. You are nothing to me but just another noob. I will downvote you the fuck out with precision the likes of which has never been seen before on the Internet, mark my fucking words. You think you can get away with saying that shit to me over the reddit? Think again, fucker. As we speak on Discord I am contacting my secret network of neck-beards AND Anonymous all across the USA and your IP is being traced right now so you better prepare for the storm, you racist. The storm that wipes out the pathetic little thing you call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can downvote you in over seven hundred ways, and that's just with my bare keyboard and mouse. Not only am I extensively trained in karma-farming and jail-baiting, but I have access to the entire Reddit botnet and I will use it to its full extent to wipe your miserable ass off the face of Reddit, you little shit. If only you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held your fucking little greasy fingers off your keyboard. But you couldn't, you didn't, and now you're paying the toll, you goddamn idiot. I will shit negative karma all over you and you will drown in it. You're fucking dead, little one.
 			</p>
+		
 		</div>
 
-		<div class="review">
+		<div id="review">
+		
 			<h2>User Reviews:</h2>
+		
 			<div class="cards">
-					<div class="card01">
+		
+				<div id="card01">
 					<h2>CIA Agent In My Basement</h2>
 					<hr>
 					<img src="img/glowingman.webp" class="image-cards" alt="glowing cia agent">
@@ -165,7 +226,8 @@
 					<img src="img/icon/icon-star.png" alt="star" class="icon-cards">
 					<img src="img/icon/icon-star.png" alt="star" class="icon-cards">
 				</div>
-				<div class="card02">
+		
+				<div id="card02">
 					<h2>Stephen Hawking</h2>
 					<hr>
 					<img src="img/sh.webp" class="image-cards" alt="Stephen Hawking">
@@ -175,7 +237,8 @@
 					<img src="img/icon/icon-star.png" alt="star" class="icon-cards">
 					<img src="img/icon/icon-star.png" alt="star" class="icon-cards">
 				</div>
-				<div class="card03">
+		
+				<div id="card03">
 					<h2>Adolf Hitler</h2>
 					<hr>
 					<img src="img/ah.webp" class="image-cards" alt="Adolf Hitler (present day)">
@@ -186,9 +249,10 @@
 			
 			</div>
 		</div>
-		<div class="sotw">
+
+		<div id="sotw">
 			<h2>Song Of The Week:</h2>
-			<img src="music/sotw.jpg" class="sotw-image">
+			<img src="music/sotw.jpg" id="sotw-image">
 			<div class="audio-player">
 				<audio id="audio-music">
 					<source src="https://files.catbox.moe/v8xgw4.m4a">
@@ -209,6 +273,11 @@
 			<h2>-Unglued-<br>By Stone Temple Pilots</h2>
 			</div>
 		</div>
+				
+		<div id="footer">
+			<h2>its a footer lol</h2>
+		</div>
+
 	</div>
     <script src="script.js"></script>
 </body>

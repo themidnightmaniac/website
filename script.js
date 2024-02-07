@@ -39,3 +39,41 @@ audio.addEventListener("timeupdate", () => {
     const progress = (currentTime / duration) * 100;
     progressBar.style.width = `${progress}%`;
 });
+
+/*Theme switcher*/
+
+function toggleTheme() { 
+ 
+  var theme = document.getElementsByTagName('link')[0]; 
+
+  if (theme.getAttribute('href') == 'themes/main.css') { 
+
+    theme.setAttribute('href', 'themes/dark.css'); 
+    document.getElementById("theme-button").innerHTML = "Neo";
+
+  }else if (theme.getAttribute('href') == 'themes/dark.css'){
+
+    theme.setAttribute('href', 'themes/neo.css');
+    document.getElementById("theme-button").innerHTML = "Heaven";
+
+  }else if (theme.getAttribute('href') == 'themes/neo.css'){
+
+    theme.setAttribute('href', 'themes/heaven.css');
+    document.getElementById("theme-button").innerHTML = "Cancer";
+
+  }else if (theme.getAttribute('href') == 'themes/heaven.css'){
+
+    theme.setAttribute('href', 'themes/cancer.css');
+    document.getElementById("theme-button").innerHTML = "Wild";
+
+  }
+  else if (theme.getAttribute('href') == 'themes/cancer.css'){
+
+    theme.setAttribute('href', 'themes/wild.css');
+    document.getElementById("theme-button").innerHTML = "Main";
+
+  }else { 
+    theme.setAttribute('href', 'themes/main.css'); 
+    document.getElementById("theme-button").innerHTML = "Dark";
+  } 
+} 
