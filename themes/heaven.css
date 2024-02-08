@@ -3,7 +3,7 @@
 	--bg-color: hsl(175, 100%, 95%);
 	--border-color: hsl(268, 85%, 30%);
 	--text-color: hsl(186, 25%, 25%);
-	--tex-color-neg: hsl(0, 25%, 25%);
+	--text-color-neg: var(--bg-color-alt);
 	--link-color: hsl(12, 100%, 60%);
 	--link-color-visited: hsl(12, 100%, 20%);
 }
@@ -101,7 +101,7 @@ hr {
 }
 #theme-button:hover{
 	background-color: var(--border-color);
-	color: var(--bg-color-alt);
+	color: var(--text-color-neg);
 	border-color: var(--border-color);
 }
 
@@ -169,6 +169,24 @@ hr {
 	grid-row: 5/5;
 	border: solid var(--border-color);
 	border-width: 2px 0px 2px 0px;
+}
+
+/*Post 03*/
+
+#livekek{
+	border: solid var(--border-color);
+	border-width: 2px 0px 2px 0px;
+	background-color: var(--bg-color-alt);
+	grid-column: 2/6;
+	grid-row: 6/6;
+}
+
+#livekekimg{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	max-width: 650px;
 }
 
 /*Hall Of Fame*/
@@ -280,6 +298,8 @@ hr {
 	width: 240px;
 }
 
+/*Shorties*/
+
 #shortie01{
 	border: 2px dashed var(--border-color);
 	background-color: var(--bg-color-alt);
@@ -302,6 +322,9 @@ hr {
 	grid-column: 6/7;
 	grid-row: 2/2;
 	border: 2px dashed var(--border-color);
+}
+#shortie03 h2{
+	margin: 15px;
 }
 
 #shortie04{
@@ -532,7 +555,24 @@ hr {
 
 #footer {
 	background-color: var(--bg-color-alt);
-	border-color: var(--border-color);
+	border: 2px dashed var(--border-color);
+	padding: 15px;
 	grid-column: 1/8;
 	grid-row: 15/15;
+}
+
+#gh-logo{
+	display: inline;
+	margin: 5px;
+	margin-bottom: 0px;
+	width: 16px;
+	content: url(/img/icon/github-pos.png);
+}
+
+#nc-logo{
+	display: inline;
+	margin: 5px;
+	margin-bottom: 0px;
+	width: 16px;
+	content: url(/img/icon/neocities-pos.png);
 }

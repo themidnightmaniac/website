@@ -40,16 +40,46 @@ audio.addEventListener("timeupdate", () => {
     progressBar.style.width = `${progress}%`;
 });
 
+/*Greeting*/
+
+function addZero(i) {
+  if (i < 10) {i = "0" + i}
+  return i;
+}
+
+const d = new Date();
+let h = addZero(d.getHours());
+
+let greet = "Hewo"
+
+if (h < 4)	{
+  greet = "hope yuo r having a great night"
+}else if (h < 12)	{
+  greet = "good morning 4 u";
+} else if (h < 18)	{
+  greet = "hope ur having a great afternoon";
+} else if (h < 22)	{
+  greet = "good eebening, visitor"
+} else if (h < 23)	{
+  greet = "good night four u" 
+} else {
+  greet = "happy midnight";
+}
+
+document.getElementById("helo").innerHTML = greet
+
 /*Theme switcher*/
 
 function toggleTheme() { 
  
   var theme = document.getElementsByTagName('link')[0]; 
 
+
   if (theme.getAttribute('href') == 'themes/main.css') { 
 
     theme.setAttribute('href', 'themes/midnight.css'); 
     document.getElementById("theme-button").innerHTML = "Neo";
+    setCookie("themeC","midnight","180")
 
   }else if (theme.getAttribute('href') == 'themes/midnight.css'){
 
