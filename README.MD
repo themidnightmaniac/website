@@ -1,1 +1,1 @@
-my personal website, published with neocities.
+my personal website, published with neocities. https://midnightmaniac.neocities.org/
