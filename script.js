@@ -48,7 +48,7 @@ function toggleTheme() {
 
   if (theme.getAttribute('href') == 'themes/main.css') { 
 
-    theme.setAttribute('href', 'themes/dark.css'); 
+    theme.setAttribute('href', 'themes/midnight.css'); 
     document.getElementById("theme-button").innerHTML = "Neo";
 
   }else if (theme.getAttribute('href') == 'themes/dark.css'){
@@ -74,6 +74,6 @@ function toggleTheme() {
 
   }else { 
     theme.setAttribute('href', 'themes/main.css'); 
-    document.getElementById("theme-button").innerHTML = "Dark";
+    document.getElementById("theme-button").innerHTML = "Midnight";
   } 
 } 
