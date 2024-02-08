@@ -51,7 +51,7 @@ function toggleTheme() {
     theme.setAttribute('href', 'themes/midnight.css'); 
     document.getElementById("theme-button").innerHTML = "Neo";
 
-  }else if (theme.getAttribute('href') == 'themes/dark.css'){
+  }else if (theme.getAttribute('href') == 'themes/midnight.css'){
 
     theme.setAttribute('href', 'themes/neo.css');
     document.getElementById("theme-button").innerHTML = "Heaven";
