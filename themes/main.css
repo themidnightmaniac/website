@@ -59,6 +59,7 @@ hr {
 	font-family: Silkscreen-Regular;
 	display: grid;
 	grid-template-columns: minmax(1fr, 300px) repeat(4, minmax(15ch, 1fr)) minmax(1fr, 300px);
+	grid-template-columns: repeat(6, fr);
 	grid-template-rows: repeat(12, minmax(150px, auto));
 	margin: 0 auto;
 }
@@ -191,6 +192,19 @@ hr {
 	max-width: 650px;
 }
 
+/*Post 04*/
+
+/*#goytube{
+	background-color: var(--bg-color-alt);
+	grid-column: 2/6;
+	grid-row: 7/10;
+}
+#goytubeimg{
+	float: left;
+    margin: 5px 20px 0px 20px;
+	width: 200px;
+}
+/*
 /*Hall Of Fame*/
 
 #hall-of-fame{
@@ -565,16 +579,29 @@ hr {
 
 #gh-logo{
 	display: inline;
-	margin: 5px;
+	margin: 6px;
 	margin-bottom: 0px;
 	width: 16px;
+	height: 16px;
 	content: url(/img/icon/github-pos.png);
 }
 
 #nc-logo{
 	display: inline;
-	margin: 5px;
+	margin: 6px;
 	margin-bottom: 0px;
 	width: 16px;
+	height: 16px;
 	content: url(/img/icon/neocities-pos.png);
 }
+
+.footer-buttons{
+	margin: 15px 1px 0px 1px;
+	width: 88px;
+	height: 31px;
+	transition: .2s;
+ }
+ 
+ .footer-buttons:hover{
+   transform: scale(1.1); 
+ }

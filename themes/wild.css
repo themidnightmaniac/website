@@ -579,3 +579,14 @@ hr {
 	width: 16px;
 	content: url(/img/icon/neocities-pos.png);
 }
+
+.footer-buttons{
+	margin: 15px 1px 0px 1px;
+	width: 88px;
+	height: 31px;
+	transition: .2s;
+ }
+ 
+ .footer-buttons:hover{
+   transform: scale(1.1); 
+ }
