@@ -62,7 +62,7 @@ hr {
 
 #page {
 	font-size: 11pt;
-	font-family: Silkscreen-Regular;
+	font-family: Silkscreen-Regular, Verdana, sans-serif;
 	display: grid;
 	grid-template-columns: minmax(1fr, 350px) repeat(4, minmax(1fr, 15ch)) minmax(1fr, 350px);
 	grid-template-rows: repeat(16, minmax(150px, auto));
@@ -101,7 +101,7 @@ hr {
 	margin: 5px;
 }
 #theme-button{
-	font-family: Silkscreen-Regular;
+	font-family: inherit;
 	color: var(--text-color);
 	background-color: var(--bg-color-alt);
 	padding: 5px;
@@ -586,7 +586,7 @@ hr {
 	border: 2px solid var(--border-color);
 	width: 100px;
 	height: 30px;
-	font-family: Silkscreen-Regular;
+	font-family: inherit;
 	color: var(--text-color);
 	background-color: var(--bg-color-alt);
 }
@@ -693,8 +693,8 @@ hr {
 	width: 88px;
 	height: 31px;
 	transition: .2s;
- }
- 
- .footer-buttons:hover{
-   transform: scale(1.1); 
- }
+}
+
+.footer-buttons:hover{
+  transform: scale(1.1); 
+}
