@@ -64,7 +64,6 @@ hr {
 	font-size: 11pt;
 	font-family: Silkscreen-Regular;
 	display: grid;
-	/*grid-template-columns: minmax(1fr, 500px) repeat(4, minmax(15ch, 1fr) minmax(1fr, 500px);*/
 	grid-template-columns: minmax(1fr, 350px) repeat(4, minmax(1fr, 15ch)) minmax(1fr, 350px);
 	grid-template-rows: repeat(16, minmax(150px, auto));
 	margin: 0 auto;
