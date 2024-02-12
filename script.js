@@ -68,42 +68,124 @@ if (h < 4)	{
 
 document.getElementById("helo").innerHTML = greet
 
-/*Theme switcher*/
+/*Check For Previously Selected  Theme*/
+
+var theme = document.getElementsByTagName('link')[0];
+
+var prevtheme = localStorage.getItem('theme') || '';
+
+if (typeof prevtheme === 'undefined') {
+  localStorage.setItem('theme','main');
+}else {
+  savetheme()
+}
+
+function savetheme(){
+
+  if (prevtheme == 'main') {
+
+    theme.setAttribute('href', 'themes/main.css');
+    document.getElementById("theme-button").innerHTML = "Midnight";
+
+  }else if (prevtheme == 'midnight') {
+
+    theme.setAttribute('href', 'themes/midnight.css');
+    document.getElementById("theme-button").innerHTML = "Neo";
+
+  }else if (prevtheme == 'neo') {
+  
+    theme.setAttribute('href', 'themes/neo.css');
+    document.getElementById("theme-button").innerHTML = "Heaven";
+  
+  }else if (prevtheme == 'heaven') {
+  
+    theme.setAttribute('href', 'themes/heaven.css');
+    document.getElementById("theme-button").innerHTML = "Cancer";
+  
+  }else if (prevtheme == 'cancer') {
+  
+    theme.setAttribute('href', 'themes/cancer.css');
+    document.getElementById("theme-button").innerHTML = "Wild";
+  
+  }else if (prevtheme == 'wild') {
+  
+    theme.setAttribute('href', 'themes/wild.css');
+    document.getElementById("theme-button").innerHTML = "Main";
+  
+  }else {
+  
+    theme.setAttribute('href', 'themes/main.css')
+    document.getElementById("theme-button").innerHTML = "Midnight";
+  
+  }
+}
+
+/*Theme Switcher*/
 
 function toggleTheme() { 
  
-  var theme = document.getElementsByTagName('link')[0]; 
-
-
   if (theme.getAttribute('href') == 'themes/main.css') { 
 
     theme.setAttribute('href', 'themes/midnight.css'); 
     document.getElementById("theme-button").innerHTML = "Neo";
-    setCookie("themeC","midnight","180")
+    localStorage.setItem('theme','midnight')
 
   }else if (theme.getAttribute('href') == 'themes/midnight.css'){
 
     theme.setAttribute('href', 'themes/neo.css');
     document.getElementById("theme-button").innerHTML = "Heaven";
+    localStorage.setItem('theme','neo')
 
   }else if (theme.getAttribute('href') == 'themes/neo.css'){
 
     theme.setAttribute('href', 'themes/heaven.css');
     document.getElementById("theme-button").innerHTML = "Cancer";
+    localStorage.setItem('theme','heaven')
 
   }else if (theme.getAttribute('href') == 'themes/heaven.css'){
 
     theme.setAttribute('href', 'themes/cancer.css');
     document.getElementById("theme-button").innerHTML = "Wild";
+    localStorage.setItem('theme','cancer')
 
   }
   else if (theme.getAttribute('href') == 'themes/cancer.css'){
 
     theme.setAttribute('href', 'themes/wild.css');
     document.getElementById("theme-button").innerHTML = "Main";
+    localStorage.setItem('theme','wild')
 
   }else { 
     theme.setAttribute('href', 'themes/main.css'); 
     document.getElementById("theme-button").innerHTML = "Midnight";
+    localStorage.setItem('theme','main')
   } 
 } 
+
+/*Copy Button*/
+
+async function cpMe() {
+  try {
+    await navigator.clipboard.writeText('<img width="88px" src=https://midnightmaniac.neocities.org/img/buttons/midnightmaniac.png alt="midnight maniac">');
+    console.log('Content copied to clipboard');
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+}
+
+/*Check If Mobile*/
+
+var warned = localStorage.getItem('alerted') || '';
+if (warned != 'yes') {
+ uaAlert();
+ localStorage.setItem('alerted','yes');
+}
+
+function uaAlert(){
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    window.alert("WARNING! this website looks cursed on mobile, proceed at your own risk, you'll be warned only once.");
+    console.log("Phone User")
+  }else{
+    console.log("Desktop User")
+  }
+}
