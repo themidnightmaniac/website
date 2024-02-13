@@ -42,3 +42,13 @@ function savetheme(){
   
   }
 }
+
+/*/...Theme*/
+
+/*Open Image On A New Tab*/
+
+function openImg(link, target){
+  window.open(link, target)
+}
+
+/*Open Image...*/

@@ -66,7 +66,7 @@ if (h < 4)	{
   greet = "happy midnight";
 }
 
-document.getElementById("helo").innerHTML = greet
+document.getElementById("hello").innerHTML = greet
 
 /*Check For Previously Selected  Theme*/
 
@@ -189,3 +189,14 @@ function uaAlert(){
     console.log("Desktop User")
   }
 }
+
+/*Get SOTW Details From File */
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        document.getElementById('sotw-details').innerHTML = xhr.responseText;
+    }
+}
+xhr.open('GET', 'test.txt');
+xhr.send();

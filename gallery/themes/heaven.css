@@ -7,10 +7,8 @@
 	--text-color-neg: var(--bg-color-alt);
 	--link-color: hsl(12, 100%, 60%);
 	--link-color-visited: hsl(12, 100%, 20%);
-	--slider-music-pos: url(/img/icon/slider-handle-pos-heaven.png);
-	--slider-music-neg: url(/img/icon/slider-handle-neg-heaven.png);
-	--js-user-img: url(/img/js-user.webp);
-	--missing-flight-img: url(/img/malaysia.webp);
+	--font-size: 0.8vw;
+	--border-width: 0.2em;
 }
 /*/Color Scheme*/
 
@@ -37,15 +35,15 @@ body{
 hr{
 	margin: 0px 0px 0px 0px;	
 	border: 0px solid var(--border-color);
-	border-top: 2px solid;
+	border-top: var(--border-width) solid;
 }
 
 p{
-	margin: 15px;
+	margin: 1.5em;
 }
 
 div{
-	margin: 5px;
+	margin: 0.4em;
 }
 
 a {
@@ -68,7 +66,7 @@ hr {
 
 /*Page*/
 #page {
-	font-size: 11pt;
+	font-size: var(--font-size);
 	font-family: Silkscreen-Regular, Verdana, sans-serif;
 	display: grid;
 	grid-template-columns: 1fr minmax(500px, 3fr) 1fr;
@@ -83,7 +81,7 @@ hr {
 	grid-row: 1/2;
 	background-color: var(--bg-color-alt);
 	border: solid var(--border-color);
-	border-width: 2px 0px 2px 0px;
+	border-width: var(--border-width) 0px var(--border-width) 0px;
 }
 /*/Header*/
 
@@ -92,7 +90,7 @@ hr {
 	grid-column: 2/3;
 	grid-row: 2/3;
 	background-color: var(--bg-color-alt);
-	border: 2px dashed var(--border-color);
+	border: var(--border-width) dashed var(--border-color);
 }
 
 .image-container{
@@ -104,8 +102,8 @@ hr {
 .image-gallery{
 	width: 25%;
 	height: auto;
-	margin: 20px;
-	border: 2px dashed var(--border-color);
+	margin: 2em;
+	border: var(--border-width) dashed var(--border-color);
 }
 .image-gallery-big{
 	width: 90%;
@@ -119,6 +117,6 @@ hr {
 	grid-row: 3/4;
 	background-color: var(--bg-color-alt);
 	border: solid var(--border-color);
-	border-width: 2px 0px 2px 0px;
+	border-width: var(--border-width) 0px var(--border-width) 0px;
 }
 /*/Footer*/
