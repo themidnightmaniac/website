@@ -1,0 +1,110 @@
+:root {
+	--bg-color-alt: hsl(0, 0%, 100%);
+	--bg-color: hsl(60, 2%, 90%);
+	--border-color: hsl(0, 0%, 0%);
+	--text-color: hsl(0, 0%, 0%);
+	--text-color-neg: hsl(0, 0%, 100%);
+	--link-color: hsl(245, 100%, 50%);
+	--link-color-visited: hsl(265, 100%, 50%);
+	--slider-music-pos: url(/img/icon/slider-handle-neg.png);
+	--slider-music-neg: url(/img/icon/slider-handle-pos.png);
+	--js-user-img: url(/img/js-user.webp);
+	--missing-flight-img: url(/img/malaysia.webp);
+}
+
+@font-face {
+	font-family: Silkscreen-Regular;
+	src: url('/fonts/Silkscreen-Regular.ttf') format('truetype');
+  }
+
+@font-face {
+	font-family: Silkscreen-Bold;
+	font-weight: bold;
+	src: url('/fonts/Silkscreen-Bold.ttf') format('truetype');
+}
+
+body{
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	text-align: center;
+}
+
+hr{
+	margin: 0px 0px 0px 0px;	
+	border: 0px solid var(--border-color);
+	border-top: 2px solid;
+}
+
+p{
+	margin: 15px;
+}
+
+div{
+	margin: 5px;
+}
+
+a {
+ color: var(--link-color);
+}
+a:visited {
+	color: var(--link-color-visited);
+}
+
+hr {
+	border-color: var(--border-color);
+}
+
+.pixelated{
+	image-rendering: pixelated;
+}
+
+/*Page*/
+
+#page {
+	font-size: 11pt;
+	font-family: Silkscreen-Regular, Verdana, sans-serif;
+	display: grid;
+	grid-template-columns: 1fr minmax(500px, 3fr) 1fr;
+	grid-template-rows: 1fr minmax(1fr, auto) 1fr minmax(3fr, auto);
+	margin: 0 auto;
+}
+
+#header{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	background-color: var(--bg-color-alt);
+	border: solid var(--border-color);
+	border-width: 2px 0px 2px 0px;
+}
+
+#content{
+	grid-column: 2/3;
+	grid-row: 2/3;
+	background-color: var(--bg-color-alt);
+	border: 2px dashed var(--border-color);
+}
+
+#footer{
+	grid-column: 2/3;
+	grid-row: 3/4;
+	background-color: var(--bg-color-alt);
+	border: solid var(--border-color);
+	border-width: 2px 0px 2px 0px;
+}
+
+.image-container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.image-gallery{
+	width: 25%;
+	height: auto;
+	margin: 20px;
+	border: 2px dashed var(--border-color);
+}
+.image-gallery-big{
+	width: 90%;
+	height: auto;
+}

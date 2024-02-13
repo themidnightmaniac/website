@@ -53,7 +53,7 @@ let h = addZero(d.getHours());
 let greet = "Hewo"
 
 if (h < 4)	{
-  greet = "hope yuo r having a great night"
+  greet = "hope yuo r having a great evening"
 }else if (h < 12)	{
   greet = "good morning 4 u";
 } else if (h < 18)	{
@@ -61,7 +61,7 @@ if (h < 4)	{
 } else if (h < 22)	{
   greet = "good eebening, visitor"
 } else if (h < 23)	{
-  greet = "good night four u" 
+  greet = "good evening four yuo" 
 } else {
   greet = "happy midnight";
 }
