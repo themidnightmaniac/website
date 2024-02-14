@@ -24,6 +24,10 @@ function savetheme(){
   
     theme.setAttribute('href', '/gallery/themes/neo.css');
   
+  }else if (prevtheme == 'neon') {
+  
+    theme.setAttribute('href', '/gallery/themes/neon.css');
+  
   }else if (prevtheme == 'heaven') {
   
     theme.setAttribute('href', '/gallery/themes/heaven.css');
@@ -45,10 +49,10 @@ function savetheme(){
 
 /*/...Theme*/
 
-/*Open Image On A New Tab*/
+/*Open Image On Click*/
 
 function openImg(link, target){
   window.open(link, target)
 }
 
-/*Open Image...*/
+/*/Open Image On Click*/

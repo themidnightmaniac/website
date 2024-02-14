@@ -4,7 +4,7 @@
 	--bg-color: hsl(0, 0%, 15%);
 	--border-color: hsl(0, 0%, 100%);
 	--text-color: var(--border-color);
-	--text-color-neg: hsl(0, 0%, 0%);
+	--text-color-spec: hsl(0, 0%, 100%);
 	--link-color: hsl(180, 100%, 76%);
 	--link-color-visited: hsl(180, 100%, 76%);
 	--slider-music-pos: url(/img/icon/slider-handle-neg.png);
@@ -13,6 +13,8 @@
 	--missing-flight-img: url(/img/malaysia-neg.webp);
 	--font-size: 0.8vw;
 	--border-width: 0.2em;
+	--bg-image: url(/img/background/pattern-black.png);
+	--text-color-neg: var(--bg-color-alt);
 }
 /*/Color Scheme*/
 
@@ -31,9 +33,11 @@
 
 /*HTML Element "Improvements"*/
 body{
+	image-rendering: pixelated;
 	color: var(--text-color);
 	background-color: var(--bg-color);
 	text-align: center;
+	background-image: var(--bg-image);
 }
 
 hr{
@@ -70,6 +74,7 @@ hr {
 
 /*Page*/
 #page {
+	image-rendering: auto;
 	font-size: var(--font-size);
 	font-family: Silkscreen-Regular, Verdana, sans-serif;
 	display: grid;
@@ -89,6 +94,10 @@ hr {
 	grid-column: 1/8;
 	border: var(--border-width) solid var(--border-color);
 	border-width: var(--border-width) 0px var(--border-width) 0px;
+}
+
+#header h1{
+	color: var(--text-color-spec);
 }
 
 #logo{
@@ -245,6 +254,7 @@ hr {
 	margin: 10px 20px 20px 20px;
 }
 .title-content{
+	color: var(--text-color-spec);
 	text-align: left;
 	margin: 20px 20px 10px 20px;
 }
@@ -537,6 +547,9 @@ hr {
 	grid-column: 1/7;
 	grid-row: 15/17;
 }
+#review-title{
+	color: var(--text-color-spec);
+}
 
 .icon-cards{
 	width: 24px;
@@ -547,6 +560,7 @@ hr {
 	display: flex;
 	flex-direction: row;
 }
+
 #card01{
 	width: 22%;
 	margin: 20px;

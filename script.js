@@ -95,6 +95,11 @@ function savetheme(){
   }else if (prevtheme == 'neo') {
   
     theme.setAttribute('href', 'themes/neo.css');
+    document.getElementById("theme-button").innerHTML = "Neon";
+  
+  }else if (prevtheme == 'neon') {
+  
+    theme.setAttribute('href', 'themes/neon.css');
     document.getElementById("theme-button").innerHTML = "Heaven";
   
   }else if (prevtheme == 'heaven') {
@@ -133,10 +138,16 @@ function toggleTheme() {
   }else if (theme.getAttribute('href') == 'themes/midnight.css'){
 
     theme.setAttribute('href', 'themes/neo.css');
-    document.getElementById("theme-button").innerHTML = "Heaven";
+    document.getElementById("theme-button").innerHTML = "Neon";
     localStorage.setItem('theme','neo')
 
   }else if (theme.getAttribute('href') == 'themes/neo.css'){
+
+    theme.setAttribute('href', 'themes/neon.css');
+    document.getElementById("theme-button").innerHTML = "Heaven";
+    localStorage.setItem('theme','neon')
+
+  }else if (theme.getAttribute('href') == 'themes/neon.css'){
 
     theme.setAttribute('href', 'themes/heaven.css');
     document.getElementById("theme-button").innerHTML = "Cancer";
@@ -148,8 +159,7 @@ function toggleTheme() {
     document.getElementById("theme-button").innerHTML = "Wild";
     localStorage.setItem('theme','cancer')
 
-  }
-  else if (theme.getAttribute('href') == 'themes/cancer.css'){
+  }else if (theme.getAttribute('href') == 'themes/cancer.css'){
 
     theme.setAttribute('href', 'themes/wild.css');
     document.getElementById("theme-button").innerHTML = "Main";
@@ -166,7 +176,7 @@ function toggleTheme() {
 
 async function cpMe() {
   try {
-    await navigator.clipboard.writeText('<img width="88px" src=https://midnightmaniac.neocities.org/img/buttons/midnightmaniac.png alt="midnight maniac">');
+    await navigator.clipboard.writeText('<a href="https://midnightmaniac.neocities.org/" target="_blank"><img width="88px" src=https://midnightmaniac.neocities.org/img/buttons/midnightmaniac.png alt="Midnight Maniac"></a>');
     console.log('Content copied to clipboard');
   } catch (err) {
     console.error('Failed to copy: ', err);
