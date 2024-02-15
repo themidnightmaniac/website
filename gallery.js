@@ -1,3 +1,20 @@
+/*Check If Mobile*/
+
+var warned = localStorage.getItem('alerted') || '';
+if (warned != 'yes') {
+ uaAlert();
+ localStorage.setItem('alerted','yes');
+}
+
+function uaAlert(){
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    window.alert("WARNING! this website looks cursed on mobile, proceed at your own risk, you'll be warned only once.");
+    console.log("Phone User")
+  }else{
+    console.log("Desktop User")
+  }
+}
+
 /*Check For Selected Theme*/
 
 var theme = document.getElementsByTagName('link')[0];
