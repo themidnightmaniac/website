@@ -87,7 +87,7 @@ h1{
 	font-size: var(--font-size);
 	font-family: Silkscreen-Regular, Verdana, sans-serif;
 	display: grid;
-	grid-template-columns: minmax(355px, 1fr) repeat(4, minmax(16ch, 1fr)) minmax(355px, 1fr);
+	grid-template-columns: minmax(210px, 1fr) repeat(4, minmax(19ch, 1fr)) minmax(210px, 1fr);
 	grid-template-rows: repeat(16, minmax(150px, auto));
 	margin: 0 auto;
 }
@@ -633,15 +633,21 @@ h1{
 	grid-row: 4/4 ;
 }
 
+#sotw h2{
+	margin-top: 1em;
+}
+
 #sotw-image{
 	border: var(--border-width) solid var(--border-color);
 	width: 50%;
+	margin: 1em 2em 0em 2em;
 }
 /*/SOTW*/
 
 /*Audio Player*/
 .audio-player {
-    margin: 20px;
+	width: 60%;
+    margin: 2em;
 }
 
 .controls {
@@ -737,24 +743,6 @@ h1{
 	padding: 15px;
 	grid-column: 1/8;
 	grid-row: 17/18;
-}
-
-#gh-logo{
-	display: inline;
-	margin: 6px;
-	margin-bottom: 0px;
-	width: 16px;
-	height: 16px;
-	content: url(/img/icon/github-pos.png);
-}
-
-#nc-logo{
-	display: inline;
-	margin: 6px;
-	margin-bottom: 0px;
-	width: 16px;
-	height: 16px;
-	content: url(/img/icon/neocities-neg.png);
 }
 
 .footer-buttons{
