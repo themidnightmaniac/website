@@ -208,5 +208,5 @@ xhr.onreadystatechange = function() {
         document.getElementById('sotw-details').innerHTML = xhr.responseText;
     }
 }
-xhr.open('GET', 'test.txt');
+xhr.open('GET', '/sotw.txt');
 xhr.send();
